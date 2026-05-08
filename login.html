@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FoodOPS Login</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, sans-serif;
+        }
+
+        body{
+            background:#111;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height:100vh;
+        }
+
+        .login-box{
+            background:#1f1f1f;
+            padding:40px;
+            width:350px;
+            border-radius:15px;
+            text-align:center;
+        }
+
+        .login-box h1{
+            color:orange;
+            margin-bottom:30px;
+        }
+
+        input{
+            width:100%;
+            padding:15px;
+            margin-bottom:20px;
+            border:none;
+            border-radius:8px;
+            background:#2b2b2b;
+            color:white;
+        }
+
+        button{
+            width:100%;
+            padding:15px;
+            border:none;
+            background:orange;
+            color:white;
+            font-size:18px;
+            border-radius:8px;
+            cursor:pointer;
+        }
+
+        button:hover{
+            background:#ff8800;
+        }
+
+        p{
+            color:#ccc;
+            margin-top:15px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="login-box">
+
+        <h1>FoodOPS Login</h1>
+
+        <input type="text" id="username" placeholder="Enter Username">
+
+        <input type="password" id="password" placeholder="Enter Password">
+
+        <button onclick="login()">Login</button>
+
+       
+    </div>
+
+    <script>
+
+        function login(){
+
+            let username = document.getElementById("username").value;
+
+            let password = document.getElementById("password").value;
+
+            if(username == "admin" && password == "1234"){
+
+                alert("Login Successful");
+
+                window.location.href = "index.html";
+
+            }
+
+            else{
+
+                alert("Wrong Username or Password");
+
+            }
+
+        }
+
+    </script>
+
+</body>
+</html>
