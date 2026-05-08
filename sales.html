@@ -125,20 +125,47 @@
 
         @media(max-width:768px){
 
-            body{
-                flex-direction:column;
-            }
+    body{
+        flex-direction:column;
+    }
 
-            .sidebar{
-                width:100%;
-                height:auto;
-                position:relative;
-            }
+    .sidebar{
+        width:100%;
+        height:auto;
+        position:relative;
+    }
 
-            .main{
-                margin-left:0;
-            }
-        }
+    .main{
+        margin-left:0;
+        width:100%;
+        padding:20px;
+    }
+
+    header{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    nav{
+        margin-top:15px;
+    }
+
+    .hero h1{
+        font-size:35px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+    .cards{
+        grid-template-columns:1fr;
+    }
+
+    table{
+        font-size:14px;
+    }
+}
 
     </style>
 
