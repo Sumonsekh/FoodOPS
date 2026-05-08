@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodOPS Employees</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, sans-serif;
+        }
+
+        body{
+            background:#111;
+            color:white;
+            display:flex;
+        }
+
+        .sidebar{
+            width:250px;
+            height:100vh;
+            background:#1a1a1a;
+            padding:30px 20px;
+            position:fixed;
+        }
+
+        .sidebar h2{
+            color:orange;
+            text-align:center;
+            margin-bottom:40px;
+        }
+
+        .sidebar a{
+            display:block;
+            color:white;
+            text-decoration:none;
+            padding:15px;
+            margin-bottom:10px;
+            border-radius:8px;
+        }
+
+        .sidebar a:hover{
+            background:orange;
+        }
+
+        .main{
+            margin-left:250px;
+            width:100%;
+            padding:30px;
+        }
+
+        .main h1{
+            color:orange;
+            margin-bottom:30px;
+        }
+
+        .employee-card{
+            background:#1f1f1f;
+            padding:25px;
+            border-radius:15px;
+            margin-bottom:25px;
+        }
+
+        .employee-card h2{
+            color:orange;
+            margin-bottom:10px;
+        }
+
+        .employee-card p{
+            color:#ccc;
+            margin-bottom:8px;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="sidebar">
+    <h2>FoodOPS</h2>
+
+    <a href="index.html">Home</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="sales.html">Sales</a>
+    <a href="inventory.html">Inventory</a>
+    <a href="employees.html">Employees</a>
+    <a href="reports.html">Reports</a>
+</div>
+
+<div class="main">
+
+    <h1>Employee Management</h1>
+
+    <div class="employee-card">
+        <h2>Sekh Asraful</h2>
+        <p>Designation: Cashier</p>
+        <p>Shift: Morning</p>
+        <p>Salary: ₹20,000</p>
+    </div>
+
+    <div class="employee-card">
+        <h2>Dilip Behera</h2>
+        <p>Designation: Chef</p>
+        <p>Shift: Evening</p>
+        <p>Salary: ₹25,000</p>
+    </div>
+
+    <div class="employee-card">
+        <h2>Sharwan Paswan</h2>
+        <p>Designation: Manager</p>
+        <p>Shift: Full Day</p>
+        <p>Salary: ₹35,000</p>
+    </div>
+
+</div>
+
+</body>
+</html>
